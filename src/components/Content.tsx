@@ -1,9 +1,12 @@
 import { useEffect, useState } from "react";
 import { api } from "../services/api";
+import { Header } from "./Header";
 
 import { MovieCard } from "./MovieCard";
 
 import { GenreResponseProps } from "./SideBar";
+
+import "../styles/content.scss";
 
 interface MovieProps {
   imdbID: string;
@@ -34,11 +37,7 @@ export function Content({ selectedGenreId, selectedGenre }: ContentProps) {
 
   return (
     <div className="container">
-      <header>
-        <span className="category">
-          Categoria:<span> {selectedGenre.title}</span>
-        </span>
-      </header>
+      <Header title={selectedGenre.title} />
 
       <main>
         <div className="movies-list">
