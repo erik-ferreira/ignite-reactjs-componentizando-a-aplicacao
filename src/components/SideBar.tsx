@@ -44,7 +44,7 @@ export function SideBar({ handleClickButton, selectedGenreId }: SidebarProps) {
         )}
       </button>
 
-      <nav className={`sidebar ${!showMenu ? "is-active" : ""}`}>
+      <nav className={`sidebar ${!showMenu ? "is-inactive" : "fullscreen"}`}>
         <span>
           Watch<p>Me</p>
         </span>

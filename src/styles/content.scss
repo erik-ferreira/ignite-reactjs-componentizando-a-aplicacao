@@ -21,11 +21,11 @@ main {
     list-style: none;
     // padding: 0 auto !important;
 
-    @media screen and (max-width: 950px) {
+    @media screen and (max-width: 1260px) {
       grid-template-columns: repeat(2, 1fr);
     }
 
-    @media screen and (max-width: 620px) {
+    @media screen and (max-width: 1000px) {
       grid-template-columns: 1fr;
       margin: 0 auto;
     }
