@@ -25,6 +25,7 @@ export function SideBar({ handleClickButton, selectedGenreId }: SidebarProps) {
   const [genres, setGenres] = useState<GenreResponseProps[]>([]);
 
   function handleToggleMenu() {
+    document.body.style.overflow = !showMenu ? "hidden" : "initial";
     setShowMenu((prevState) => !prevState);
   }
 
