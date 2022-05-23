@@ -1,8 +1,13 @@
 .container {
   max-width: 52.5rem;
-  width: 100%;
+  // max-width: 70rem;
+  width: 90%;
 
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 main {
@@ -14,5 +19,15 @@ main {
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 4.75rem;
     list-style: none;
+    // padding: 0 auto !important;
+
+    @media screen and (max-width: 950px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media screen and (max-width: 620px) {
+      grid-template-columns: 1fr;
+      margin: 0 auto;
+    }
   }
 }
