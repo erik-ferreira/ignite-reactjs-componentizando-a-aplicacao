@@ -6,6 +6,10 @@ header {
     font-size: 2.25rem;
     font-weight: 600;
     color: var(--gray);
+
+    @media screen and (max-width: 540px) {
+      text-align: center;
+    }
   }
 
   span {
